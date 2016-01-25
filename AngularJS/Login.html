@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>AngularJS Directives</title>
+</head>
+
+<body>
+<h1>Login Application</h1>
+
+<div ng-app = "loginapp">
+    <p>Enter your Name: <input type = "text" ng-model = "username" id = "username" name = "username"></p>
+    <p>Enter your Name: <input type = "text" ng-model = "password" id = "password" name = "password"></p>
+
+    <p>Enter your Name: <input type = "button" id = "submit" name = "submit"></p>
+
+</div>
+
+<script src = "angular.min.js"></script>
+
+<script>
+    var loginapp = angular.module("loginapp", []);
+    loginapp.controller('LoginController', function($scope) {});
+</script>
+
+
+</body>
+</html>
